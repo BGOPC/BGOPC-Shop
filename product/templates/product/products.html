@@ -11,6 +11,17 @@ All Products
             <li><a href="{{ product.get_absolute_url }}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>
         {% endfor %}
     </ul>
+    <p>
+    count: {{ pcount }}
+        <br>
+    rates: {{ avr.rates__avg }}
+        <br>
+    avg price: {{ price.price__avg }}
+        <br>
+    min price: {{ price.price__min }}
+        <br>
+    max price: {{ price.price__max }}
+    </p>
 {% endblock content %}
 
 {% block style %}

@@ -11,7 +11,8 @@ class Product(models.Model):
     desc = models.TextField(null=False)
     rates = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)], null=True, default=1)
     ia = models.BooleanField(default=False, null=True)  # is active
-    slug = models.SlugField(default="", null=False, db_index=True)
+    slug = models.SlugField(default="", null=False, db_index=True, )
+    # slug = models.SlugField(default="", null=False, db_index=True, editable=False)
 
     def get_absolute_url(self):
         return reverse('product', args=[self.slug])

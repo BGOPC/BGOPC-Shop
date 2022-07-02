@@ -5,6 +5,7 @@ from .models import Product
 # from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.http import Http404
+from django.db.models import Avg, Min, Max
 
 
 # Create your views here.
@@ -12,7 +13,10 @@ def products(request):
     all_products = Product.objects.all()
 
     return render(request, 'product/products.html', {
-        'products': all_products,
+        'products': all_products.order_by("title"),
+        'pcount': all_products.count(),
+        'avr': all_products.aggregate(Avg("rates")),
+        'price': all_products.aggregate(Avg("price"), Min("price"), Max("price")),
     })
 
 
@@ -28,5 +32,5 @@ def product(request, ps):
         # raise Http404()
     single_product = get_object_or_404(Product, slug=ps)
     return render(request, "product/product.html", {
-        'product': single_product,
+        'product': single_product
     })
