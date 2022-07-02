@@ -7,7 +7,8 @@ All Products
 {% block content %}
     <ul>
         {% for product in products %}
-            <li><a href="{% url 'product' product.id %}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>
+{#            <li><a href="{% url 'product' product.slug %}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>#}
+            <li><a href="{{ product.get_absolute_url }}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>
         {% endfor %}
     </ul>
 {% endblock content %}

@@ -21,12 +21,12 @@ def products_red(request):
     return HttpResponseRedirect(url)
 
 
-def product(request, pid):
+def product(request, ps):
     # try:
         # single_product = Product.objects.get(id=pid)
     # except:
         # raise Http404()
-    single_product = get_object_or_404(Product, pk=pid)
+    single_product = get_object_or_404(Product, slug=ps)
     return render(request, "product/product.html", {
         'product': single_product,
     })
