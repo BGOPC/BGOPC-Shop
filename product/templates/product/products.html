@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+All Products
+{% endblock title %}
+
+{% block content %}
+    <ul>
+        {% for product in products %}
+            <li><a href="{% url 'product' product.id %}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'product/products.css' %}">
+{% endblock style %}

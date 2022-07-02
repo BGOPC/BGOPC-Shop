@@ -24,8 +24,11 @@ SECRET_KEY = 'django-insecure-plxy)&iffixm4b8fro_atf6!8d2%^i33g_!2o#k0j-_e7*am5_
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    # "127.0.0.1"
+]
 
 
 # Application definition
@@ -55,7 +58,9 @@ ROOT_URLCONF = 'BGOPC_shop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / "templates",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
