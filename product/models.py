@@ -10,12 +10,12 @@ class ProductCategory(models.Model):
     url_title = models.CharField(max_length=150, verbose_name="Category Name in url")
 
     def __str__(self):
-        return self.title
+        return f"({self.title}, {self.url_title})"
 
 
 class Product(models.Model):
     title = models.CharField(max_length=55, unique=True, null=False)
-    category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, null=True, related_name="Products ")
+    category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, null=True, related_name="Products")
     price = models.IntegerField(null=False)
     desc = models.TextField(null=False)
     rates = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)], null=True, default=1)

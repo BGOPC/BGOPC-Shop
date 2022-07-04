@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . import models
+from .models import *
 
 
 # Register your models here.
@@ -13,7 +13,8 @@ class ProductAdmin(admin.ModelAdmin):
         'slug',
         'price',
         'rates',
-        'ia'
+        'ia',
+        'category'
     ]
     list_filter = [
         'ia',
@@ -23,4 +24,5 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = [
         'ia'
     ]
-admin.site.register(models.Product, ProductAdmin)
+admin.site.register(Product, ProductAdmin)
+admin.site.register(ProductCategory)
