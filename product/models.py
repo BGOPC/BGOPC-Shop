@@ -12,6 +12,10 @@ class ProductCategory(models.Model):
     def __str__(self):
         return f"({self.title}, {self.url_title})"
 
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+
 
 class Product(models.Model):
     title = models.CharField(max_length=55, unique=True, null=False)
@@ -29,6 +33,10 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.title},{self.price}$: \n{self.desc}"
+
+    class Meta:
+        verbose_name = "Product"
+        verbose_name_plural = "Products"
 
     def save(
             self, force_insert=False, force_update=False, using=None, update_fields=None
