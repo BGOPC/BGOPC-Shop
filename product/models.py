@@ -5,13 +5,23 @@ from django.utils.text import slugify
 
 
 # Create your models here.
+class ProductCategory(models.Model):
+    title = models.CharField(max_length=150, verbose_name="Category Name")
+    url_title = models.CharField(max_length=150, verbose_name="Category Name in url")
+
+    def __str__(self):
+        return self.title
+
+
 class Product(models.Model):
     title = models.CharField(max_length=55, unique=True, null=False)
+    category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, null=True, related_name="Products ")
     price = models.IntegerField(null=False)
     desc = models.TextField(null=False)
     rates = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)], null=True, default=1)
     ia = models.BooleanField(default=False, null=True)  # is active
-    slug = models.SlugField(default="", null=False, db_index=True, )
+    slug = models.SlugField(default="", null=False, db_index=True, blank=True)
+
     # slug = models.SlugField(default="", null=False, db_index=True, editable=False)
 
     def get_absolute_url(self):
