@@ -1,6 +1,12 @@
-.color-black{
-    color:black;
+.color-black {
+    color: black;
 }
-.text-decor-none{
+
+.text-decor-none {
     text-decoration: none;
+}
+
+body {
+    color: darkcyan lightcyan transparent;
+    font-family: 'Courier New', Courier, monospace;
 }
