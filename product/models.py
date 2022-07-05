@@ -1,3 +1,4 @@
+from itertools import product
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.urls import reverse
@@ -36,6 +37,7 @@ class Product(models.Model):
     rates = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)], null=True, default=1)
     ia = models.BooleanField(default=False, null=True)  # is active
     slug = models.SlugField(default="", null=False, db_index=True, blank=True)
+    product_tags = models.ManyToManyField(ProductTag, blank=True, related_name="product_tags")
 
     # slug = models.SlugField(default="", null=False, db_index=True, editable=False)
 
