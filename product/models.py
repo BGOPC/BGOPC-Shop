@@ -5,6 +5,17 @@ from django.utils.text import slugify
 
 
 # Create your models here.
+
+class ProductTag(models.Model):
+    title = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        verbose_name = "product tag"
+        verbose_name_plural = "product tags"
+    def __str__(self):
+        return self.title
+
+
 class ProductCategory(models.Model):
     title = models.CharField(max_length=150, verbose_name="Category Name")
     url_title = models.CharField(max_length=150, verbose_name="Category Name in url")
