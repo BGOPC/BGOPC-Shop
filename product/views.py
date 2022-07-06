@@ -10,7 +10,6 @@ from django.db.models import Avg, Min, Max
 
 # Create your views here.
 def products(request):
-
     all_products = Product.objects.all()
 
     return render(request, 'product/products.html', {
@@ -26,11 +25,14 @@ def products_red(request):
 
 
 def product(request, ps):
-    # try:
-        # single_product = Product.objects.get(id=pid)
-    # except:
-        # raise Http404()
     single_product = get_object_or_404(Product, slug=ps)
     return render(request, "product/product.html", {
         'product': single_product
     })
+
+
+def contact(request):
+    return render(request, 'product/Contact.html')
+
+def site_header_partial(request):
+    return render(request, 'shared/site_header.html', )
