@@ -35,7 +35,7 @@ class Product(models.Model):
         return reverse('product', args=[self.slug])
 
     def __str__(self):
-        return f"{self.title},{self.price}$: \n{self.desc}"
+        return f"{self.title},{self.price}$: \n{self.short_description}"
 
     class Meta:
         verbose_name = "Product"

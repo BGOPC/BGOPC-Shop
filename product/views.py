@@ -16,7 +16,6 @@ def products(request):
     return render(request, 'product/products.html', {
         'products': all_products.order_by("title"),
         'pcount': all_products.count(),
-        'avr': all_products.aggregate(Avg("rates")),
         'price': all_products.aggregate(Avg("price"), Min("price"), Max("price")),
     })
 
