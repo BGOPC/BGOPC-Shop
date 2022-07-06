@@ -1,27 +1,27 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %}
-All Products
-{% endblock title %}
-
-{% block content %}
-    <ul>
-        {% for product in products %}
+{#{% extends 'base.html' %}#}
+{#{% load static %}#}
+{#{% block title %}#}
+{#All Products#}
+{#{% endblock title %}#}
+{##}
+{#{% block content %}#}
+{#    <ul>#}
+{#        {% for product in products %}#}
 {#            <li><a href="{% url 'product' product.slug %}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>#}
-            <li><a href="{{ product.get_absolute_url }}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>
-        {% endfor %}
-    </ul>
-    <p>
-    count: {{ pcount }}
-        <br>
-    avg price: {{ price.price__avg }}
-        <br>
-    min price: {{ price.price__min }}
-        <br>
-    max price: {{ price.price__max }}
-    </p>
-{% endblock content %}
-
-{% block style %}
-    <link rel="stylesheet" href="{% static 'product/products.css' %}">
-{% endblock style %}
+{#            <li><a href="{{ product.get_absolute_url }}" class="color-black text-decor-none">{{ product.title }}, price: {{ product.price  }}</a></li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#    <p>#}
+{#    count: {{ pcount }}#}
+{#        <br>#}
+{#    avg price: {{ price.price__avg }}#}
+{#        <br>#}
+{#    min price: {{ price.price__min }}#}
+{#        <br>#}
+{#    max price: {{ price.price__max }}#}
+{#    </p>#}
+{#{% endblock content %}#}
+{##}
+{#{% block style %}#}
+{#    <link rel="stylesheet" href="{% static 'product/products.css' %}">#}
+{#{% endblock style %}#}
