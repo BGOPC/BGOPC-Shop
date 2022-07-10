@@ -1,977 +1,145 @@
 {% extends 'shared/_layout.html' %}
 {% load static %}
+{% block title %}
+Products List
+{% endblock title %}
+
 {% block content %}
-	<section id="slider"><!--slider-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-						</ol>
-
-						<div class="carousel-inner">
-
-							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>BGOPC</span>Shop</h1>
-									<h2>BGOPC Shop</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="{% static 'product/images/home/girl2.jpg' %}" class="girl img-responsive" alt="" />
-									<img src="{% static 'product/images/home/pricing.png' %}"  class="pricing" alt="" />
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>SHOP</span>CENTER</h1>
-									<h2>BGOPC shop</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="{% static 'product/images/home/girl2.jpg' %}" class="girl img-responsive" alt="" />
-									<img src="{% static 'product/images/home/pricing.png' %}" class="pricing" alt="" />
-								</div>
-							</div>
-
-						</div>
-
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<div class="container">
-			<div class="row">
-
-				<div class="recommended_items"><!--NewProduct_items-->
-						<h2 class="title text-center">Popular Products</h2>
-
-						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="{% static 'product/images/home/Gallery.jpg' %}" alt="" />
-													<h2>1.250$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-								<i class="fa fa-angle-left"></i>
-							  </a>
-							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-								<i class="fa fa-angle-right"></i>
-							  </a>
-						</div>
-					</div><!--/NewProduct_items-->
-
-				<div class="col-sm-12 padding-right">
-					<div class="features_items"><!--RetailSale_items-->
-						<a href="shop-2.html"><h2 class="title text-center">Sell</h2></a>
-						<div id="new-item-carousel" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-						<div class="item active">
-							<div class="col-sm-3">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-											<div class="product-overlay">
-												<div class="overlay-content">
-													<h2>2.500$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-											</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li>
-												<a href="#">
-													<i class="fa fa-plus-square"></i>Bookmarks List
-												</a>
-											</li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-											<div class="product-overlay">
-												<div class="overlay-content">
-													<h2>2.500$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-											</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li>
-												<a href="#">
-													<i class="fa fa-plus-square"></i>Bookmarks List
-												</a>
-											</li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-											<div class="product-overlay">
-												<div class="overlay-content">
-													<h2>2.500$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-											</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li>
-												<a href="#">
-													<i class="fa fa-plus-square"></i>Bookmarks List
-												</a>
-											</li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-											<div class="product-overlay">
-												<div class="overlay-content">
-													<h2>2.500$</h2>
-													<p>Product Short Description</p>
-													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-												</div>
-											</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li>
-												<a href="#">
-													<i class="fa fa-plus-square"></i>Bookmarks List
-												</a>
-											</li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						</div>
-					</div>
-							<a class="left recommended-item-control" href="#new-item-carousel" data-slide="prev">
-								<i class="fa fa-angle-left"></i>
-							  </a>
-							  <a class="right recommended-item-control" href="#new-item-carousel" data-slide="next">
-								<i class="fa fa-angle-right"></i>
-							  </a>
-					</div>
-					</div>
-
-					<div class="features_items"><!--WholeSale_items-->
-						<a href="shop.html"><h2 class="title text-center">Big sell</h2></a>
-						<div id="major-item-carousel" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-						<div class="item active">
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div><div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div><div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						</div>
-						<div class="item">
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="{% static 'product/images/home/product.jpg' %}" alt="" />
-											<h2>2.500$</h2>
-											<p>Product Short Description</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>2.500$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li>
-											<a href="#">
-												<i class="fa fa-plus-square"></i>Bookmarks List
-											</a>
-										</li>
-										<li><a href="#"><i class="fa fa-plus-square"></i>compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						</div>
-					</div>
-							<a class="left recommended-item-control" href="#major-item-carousel" data-slide="prev">
-								<i class="fa fa-angle-left"></i>
-							  </a>
-							  <a class="right recommended-item-control" href="#major-item-carousel" data-slide="next">
-								<i class="fa fa-angle-right"></i>
-							  </a>
-					</div>
-					</div><!--WholeSale_items-->
-
-					<div class="category-tab"><!--category-tab-->
-						<div class="col-sm-12">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#Tab_001" data-toggle="tab">Product Category 1</a></li>
-								<li><a href="#Tab_002" data-toggle="tab">Product Category 2</a></li>
-								<li><a href="#Tab_003" data-toggle="tab">Product Category 3</a></li>
-								<li><a href="#Tab_004" data-toggle="tab">Product Category 4</a></li>
-								<li><a href="#Tab_005" data-toggle="tab">Product Category 5</a></li>
-							</ul>
-						</div>
-						<div class="tab-content">
-							<div class="tab-pane fade active in" id="Tab_001" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane fade" id="Tab_002" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane fade" id="Tab_003" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane fade" id="Tab_004" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane fade" id="Tab_005" >
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="product-image-wrapper">
-										<div class="single-products">
-											<div class="productinfo text-center">
-												<img src="{% static 'product/images/home/Tabs.png' %}" alt="" />
-												<h2>56$</h2>
-												<p>Product Short Description</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>add to cart</a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!--/category-tab-->
-
-				</div>
-
-			</div>
-		</div>
-	</section>
+<section>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-9 padding-right">
+                <div class="features_items"><!--features_items-->
+                    <h2 class="title text-center">products Big sell</h2>
+                    {% for product in products %}
+                    {% include 'product/includes/product-item.html' with product=product %}
+ {% endfor %}
+                    
+                    
+                    <div class="clearfix"></div>
+                    
+                    <ul class="pagination">
+                        <li class="active"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">»</a></li>
+                    </ul>
+                </div><!--features_items-->
+            </div>
+            
+            <div class="col-sm-3">
+                <div class="left-sidebar">
+                    <h2>Categories product</h2>
+                    <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                        Category 1
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="sportswear" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="">product 1 </a></li>
+                                        <li><a href="">product 2 </a></li>
+                                        <li><a href="">product 3 </a></li>
+                                        <li><a href="">product 4</a></li>
+                                        <li><a href="">product 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                                        Category 2
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="mens" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="">product 1 </a></li>
+                                        <li><a href="">product 2 </a></li>
+                                        <li><a href="">product 3 </a></li>
+                                        <li><a href="">product 4</a></li>
+                                        <li><a href="">product 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 1</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 2</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 3</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 4</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 5</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 6</a></h4>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#">product 7</a></h4>
+                            </div>
+                        </div>
+                    </div><!--/category-productsr-->
+                
+                    <div class="brands_products"><!--brands_products-->
+                        <h2>brands</h2>
+                        <div class="brands-name">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href=""> <span class="pull-left">(50)</span>brand 1</a></li>
+                                <li><a href=""> <span class="pull-left">(56)</span>brand 2</a></li>
+                                <li><a href=""> <span class="pull-left">(27)</span>brand 3</a></li>
+                                <li><a href=""> <span class="pull-left">(32)</span>brand 4</a></li>
+                                <li><a href=""> <span class="pull-left">(5)</span>brand 5</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/brands_products-->
+                    
+                    <div class="price-range"><!--price-range-->
+                        <h2>Filter By Price</h2>
+                        <div class="well">
+                             <div class="slider slider-horizontal" style="width: 170px;"><div class="slider-track"><div class="slider-selection" style="left: 0.025%; width: 0.02%;"></div><div class="slider-handle round left-round" style="left: 0.025%;"></div><div class="slider-handle round" style="left: 0.045%;"></div></div><div class="tooltip top" style="top: -30px; left: -30.4405px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">250 : 450</div></div><input type="text" class="span2" value="" data-slider-min="0" data-slider-max="1000000" data-slider-step="5" data-slider-value="[250,450]" id="sl2" style=""></div><br>
+                        </div>
+                    </div><!--/price-range-->
+                    
+                    <div class="shipping text-center"><!--shipping-->
+                        <img src="{% static 'product/images/home/shipping.jpeg' %}" alt="">
+                    </div><!--/shipping-->
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 {% endblock content %}
-
