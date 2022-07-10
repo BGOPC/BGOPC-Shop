@@ -1,3 +1,4 @@
+from turtle import title
 from django.db import models
 # from django.core.validators import MinValueValidator, MaxValueValidator
 from django.urls import reverse
@@ -5,6 +6,10 @@ from django.utils.text import slugify
 
 
 # Create your models here.
+class ProductBrand(models.Model):
+    title = models.CharField(max_length=150,db_index=True)
+    ia = models.BooleanField(default=True)
+
 class ProductCategory(models.Model):
     title = models.CharField(max_length=150,db_index=True, verbose_name="Category Name")
     url_title = models.CharField(max_length=150,db_index=True, verbose_name="Category Name in url")
@@ -22,6 +27,7 @@ class ProductCategory(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=55, null=False)
     category = models.ManyToManyField (ProductCategory, related_name="Product_Categories")
+    brand = models.ForeignKey(ProductBrand, on_delete=models.CASCADE, null=True)
     price = models.IntegerField(null=False)
     short_description = models.CharField(max_length=500)
     desc = models.TextField(null=False)
