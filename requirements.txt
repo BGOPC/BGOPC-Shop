@@ -1,0 +1,5 @@
+django
+django-heroku
+pillow
+djangorestframework
+django-copyright
