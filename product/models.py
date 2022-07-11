@@ -9,6 +9,11 @@ from django.utils.text import slugify
 class ProductBrand(models.Model):
     title = models.CharField(max_length=150,db_index=True)
     ia = models.BooleanField(default=True)
+    def __str__(self):
+        return f"{self.title}"
+    class Meta:
+        verbose_name = "Brand"
+        verbose_name_plural = "Brands"
 
 class ProductCategory(models.Model):
     title = models.CharField(max_length=150,db_index=True, verbose_name="Category Name")

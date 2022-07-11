@@ -1,6 +1,6 @@
 # from django.http import Http404
 from django.db.models import Avg, Max, Min
-# from django.db.models import Q
+from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
@@ -33,8 +33,10 @@ def products_red(request):
 
 def product(request, ps):
     single_product = get_object_or_404(Product, slug=ps)
+    all_products = Product.objects.filter(Q(title__contains=single_product.title) | Q(brand=single_product.brand) | Q(price__=single_product.price)).order_by("title")
     return render(request, "product/product.html", {
-        'product': single_product
+        'product': single_product,
+        'products': all_products
     })
 
 
