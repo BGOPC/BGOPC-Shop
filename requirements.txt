@@ -4,3 +4,4 @@ pillow
 djangorestframework
 django-copyright
 django-render-partial
+dotenv
