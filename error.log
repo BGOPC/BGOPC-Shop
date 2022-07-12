@@ -1,0 +1,100 @@
+2022-07-12T14:44:52.716902+00:00 heroku[web.1]: Process exited with status 1
+2022-07-12T14:44:52.829317+00:00 heroku[web.1]: State changed from starting to crashed
+2022-07-12T14:44:56.000000+00:00 app[api]: Build succeeded
+2022-07-12T14:47:31.115304+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=bgopcshop.herokuapp.com request_id=b9eb537b-4b4d-414f-a2a7-9e3a069b15f1 fwd="87.163.45.17" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-12T14:47:32.547687+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=bgopcshop.herokuapp.com request_id=709f85df-7389-42e2-a952-3ad22af73e5d fwd="87.163.45.17" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-12T14:49:19.000000+00:00 app[api]: Build started by user bb8933400@gmail.com
+2022-07-12T14:49:46.062443+00:00 app[api]: Release v9 created by user bb8933400@gmail.com
+2022-07-12T14:49:46.062443+00:00 app[api]: Deploy fa04601d by user bb8933400@gmail.com
+2022-07-12T14:49:46.334353+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-12T14:49:50.518879+00:00 heroku[web.1]: Starting process with command `python3 manage.py runserver`
+2022-07-12T14:49:52.784656+00:00 app[web.1]: Watching for file changes with StatReloader
+2022-07-12T14:49:52.785544+00:00 app[web.1]: Exception in thread django-main-thread:
+2022-07-12T14:49:52.785552+00:00 app[web.1]: Traceback (most recent call last):
+2022-07-12T14:49:52.785565+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/threading.py", line 1009, in _bootstrap_inner
+2022-07-12T14:49:52.785931+00:00 app[web.1]: self.run()
+2022-07-12T14:49:52.785941+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/threading.py", line 946, in run
+2022-07-12T14:49:52.786229+00:00 app[web.1]: self._target(*self._args, **self._kwargs)
+2022-07-12T14:49:52.786241+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+2022-07-12T14:49:52.786334+00:00 app[web.1]: fn(*args, **kwargs)
+2022-07-12T14:49:52.786345+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+2022-07-12T14:49:52.786447+00:00 app[web.1]: autoreload.raise_last_exception()
+2022-07-12T14:49:52.786456+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+2022-07-12T14:49:52.786546+00:00 app[web.1]: raise _exception[1]
+2022-07-12T14:49:52.786557+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/core/management/__init__.py", line 398, in execute
+2022-07-12T14:49:52.786740+00:00 app[web.1]: autoreload.check_errors(django.setup)()
+2022-07-12T14:49:52.786750+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+2022-07-12T14:49:52.786842+00:00 app[web.1]: fn(*args, **kwargs)
+2022-07-12T14:49:52.786851+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+2022-07-12T14:49:52.786935+00:00 app[web.1]: apps.populate(settings.INSTALLED_APPS)
+2022-07-12T14:49:52.786944+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+2022-07-12T14:49:52.787040+00:00 app[web.1]: app_config.import_models()
+2022-07-12T14:49:52.787052+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/apps/config.py", line 304, in import_models
+2022-07-12T14:49:52.787200+00:00 app[web.1]: self.models_module = import_module(models_module_name)
+2022-07-12T14:49:52.787210+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2022-07-12T14:49:52.787309+00:00 app[web.1]: return _bootstrap._gcd_import(name[level:], package, level)
+2022-07-12T14:49:52.787320+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2022-07-12T14:49:52.787415+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2022-07-12T14:49:52.787479+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2022-07-12T14:49:52.787537+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2022-07-12T14:49:52.787595+00:00 app[web.1]: File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2022-07-12T14:49:52.787663+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2022-07-12T14:49:52.787721+00:00 app[web.1]: File "/app/product/models.py", line 1, in <module>
+2022-07-12T14:49:52.787807+00:00 app[web.1]: from turtle import title
+2022-07-12T14:49:52.787815+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/turtle.py", line 107, in <module>
+2022-07-12T14:49:52.787976+00:00 app[web.1]: import tkinter as TK
+2022-07-12T14:49:52.787976+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/tkinter/__init__.py", line 37, in <module>
+2022-07-12T14:49:52.788072+00:00 app[web.1]: import _tkinter # If this fails your Python may not be configured for Tk
+2022-07-12T14:49:52.788104+00:00 app[web.1]: ModuleNotFoundError: No module named '_tkinter'
+2022-07-12T14:49:57.000000+00:00 app[api]: Build succeeded
+2022-07-12T14:50:15.766990+00:00 app[api]: Stack changed from heroku-20 to heroku-22 by user bb8933400@gmail.com
+2022-07-12T14:50:51.025299+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2022-07-12T14:50:51.104846+00:00 heroku[web.1]: Stopping process with SIGKILL
+2022-07-12T14:50:51.310577+00:00 heroku[web.1]: Process exited with status 137
+2022-07-12T14:50:51.398873+00:00 heroku[web.1]: State changed from starting to crashed
+2022-07-12T14:50:51.408094+00:00 heroku[web.1]: State changed from crashed to starting
+2022-07-12T14:50:55.680979+00:00 heroku[web.1]: Starting process with command `python3 manage.py runserver`
+2022-07-12T14:50:58.195374+00:00 app[web.1]: Watching for file changes with StatReloader
+2022-07-12T14:50:58.196073+00:00 app[web.1]: Exception in thread django-main-thread:
+2022-07-12T14:50:58.196075+00:00 app[web.1]: Traceback (most recent call last):
+2022-07-12T14:50:58.196100+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/threading.py", line 1009, in _bootstrap_inner
+2022-07-12T14:50:58.196344+00:00 app[web.1]: self.run()
+2022-07-12T14:50:58.196355+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/threading.py", line 946, in run
+2022-07-12T14:50:58.196557+00:00 app[web.1]: self._target(*self._args, **self._kwargs)
+2022-07-12T14:50:58.196572+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+2022-07-12T14:50:58.196630+00:00 app[web.1]: fn(*args, **kwargs)
+2022-07-12T14:50:58.196641+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+2022-07-12T14:50:58.196740+00:00 app[web.1]: autoreload.raise_last_exception()
+2022-07-12T14:50:58.196751+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+2022-07-12T14:50:58.196821+00:00 app[web.1]: raise _exception[1]
+2022-07-12T14:50:58.196823+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/core/management/__init__.py", line 398, in execute
+2022-07-12T14:50:58.196946+00:00 app[web.1]: autoreload.check_errors(django.setup)()
+2022-07-12T14:50:58.196948+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/utils/autoreload.py", line 64, in wrapper
+2022-07-12T14:50:58.197010+00:00 app[web.1]: fn(*args, **kwargs)
+2022-07-12T14:50:58.197021+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+2022-07-12T14:50:58.197078+00:00 app[web.1]: apps.populate(settings.INSTALLED_APPS)
+2022-07-12T14:50:58.197088+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+2022-07-12T14:50:58.197162+00:00 app[web.1]: app_config.import_models()
+2022-07-12T14:50:58.197164+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/site-packages/django/apps/config.py", line 304, in import_models
+2022-07-12T14:50:58.197272+00:00 app[web.1]: self.models_module = import_module(models_module_name)
+2022-07-12T14:50:58.197273+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2022-07-12T14:50:58.197354+00:00 app[web.1]: return _bootstrap._gcd_import(name[level:], package, level)
+2022-07-12T14:50:58.197356+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2022-07-12T14:50:58.197434+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2022-07-12T14:50:58.197481+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2022-07-12T14:50:58.197529+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2022-07-12T14:50:58.197571+00:00 app[web.1]: File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2022-07-12T14:50:58.197626+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2022-07-12T14:50:58.197674+00:00 app[web.1]: File "/app/product/models.py", line 1, in <module>
+2022-07-12T14:50:58.197734+00:00 app[web.1]: from turtle import title
+2022-07-12T14:50:58.197736+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/turtle.py", line 107, in <module>
+2022-07-12T14:50:58.197865+00:00 app[web.1]: import tkinter as TK
+2022-07-12T14:50:58.197867+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.10/tkinter/__init__.py", line 37, in <module>
+2022-07-12T14:50:58.197938+00:00 app[web.1]: import _tkinter # If this fails your Python may not be configured for Tk
+2022-07-12T14:50:58.197963+00:00 app[web.1]: ModuleNotFoundError: No module named '_tkinter'
+2022-07-12T14:51:52.904256+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=bgopcshop.herokuapp.com request_id=ffcdaa11-f0f6-45a0-bee0-feae5e1cca4a fwd="87.163.45.17" dyno= connect= service= status=503 bytes= protocol=https
+2022-07-12T14:51:56.100032+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2022-07-12T14:51:56.208244+00:00 heroku[web.1]: Stopping process with SIGKILL
+2022-07-12T14:51:56.327921+00:00 heroku[web.1]: Process exited with status 137
+2022-07-12T14:51:56.555357+00:00 heroku[web.1]: State changed from starting to crashed
+2022-07-12T14:51:57.527313+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=bgopcshop.herokuapp.com request_id=8ab104e7-c0f3-456d-8fff-93cf403de074 fwd="87.163.45.17" dyno= connect= service= status=503 bytes= protocol=https
