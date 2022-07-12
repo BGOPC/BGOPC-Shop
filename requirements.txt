@@ -3,3 +3,4 @@ django-heroku
 pillow
 djangorestframework
 django-copyright
+django-render-partial
