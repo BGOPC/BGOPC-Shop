@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'product',
     'contact',
     'django_render_partial',
+    'copyright',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,4 @@ STATICFILES_DIR = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+COPY_START_YEAR = 2022
