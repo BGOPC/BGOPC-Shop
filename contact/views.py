@@ -26,3 +26,6 @@ def response(request, cid):
     return render(request, 'contact/response.html', {
         'costumer': costumer,
     })
+
+def about(request):
+    return render(request, 'contact/about.html')
